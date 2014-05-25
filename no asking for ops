@@ -13,12 +13,3 @@ class op implements Plugin {
   public function __construct(ServerAPI $api, $server = false) {
     $this->api = $api;
   }
-
-public function init(){
-
-$this->api->console->register("me is now op","kick the player who uses it",array($this,"command"));
-}
-public function command($cmd, $params, $issuer, $args, $issuer){
-$this->api->console->chat->broadcast("stop"));
-}
-
