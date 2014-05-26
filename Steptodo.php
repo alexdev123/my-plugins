@@ -18,8 +18,8 @@ class steptodo implements Plugin {
 public function init(){
 
 $this->api->console->register("stepcmd", "Sets the steb cmd for the block you step on", array($this, "command"));
-$this->config = new Config($this->api->plugin->configPath($this)."blocks.yml", CONFIG_YAML, array());
 $this->api->addHandler("player.move", array($this,"eventHandle"),50);
+$this->config = new Config($this->api->plugin->configPath($this)."blocks.yml", CONFIG_YAML, array());
 
 }
 public function __destruct(){}
