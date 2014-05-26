@@ -9,7 +9,7 @@ __PocketMine Plugin__
  apiversion=10,11,12,13
  */
 
-class op implements Plugin {
+class steptodo implements Plugin {
   private $api, $path, $d;
   public function __construct(ServerAPI $api, $server = false) {
     $this->api = $api;
